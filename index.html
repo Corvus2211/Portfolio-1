@@ -4,112 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <a href="#About">About</a>
-    <a href="#MyProject">Projects</a>
-    <a href="Skill">Technical Skills</a>
-    <a href="#Contact">Contact Info</a>
-    <br><br><br>
-    <table cellspacing = "0" cellpadding = "0" width = "100%">
-        <tr>
-            <td>
-            <h1>I'm <span style="color:rgb(69, 94, 141)">Bryan Susanto Yo</span></h1>
-            <p>Informatics | Undergraduate</p>
-            <p>Still Learning and trying to improve my competence in coding</p>
-            </td>
-            <td width = "500"><img src="img\imageTrial.jpg" alt="imageTrial.jpg" width="170" height="225"></td>
-        </tr>
-    </table>
-    <br><br>
-    <table width = "100%">
-        <th><h1 id="About">About <span style="color: aqua;">Me</span></h1></th>
-        <tr>
-            <td>
-                I am an Informatics majoring in Interactive Multimedia Student currently learning in Indonesia University Pelita Harapan (UPH), as an undergraduate I often join in various organization events as an event organizer.
-                However, I focus more on developing games that are innovative and fun to play, I am also currently still learning by taking courses to expand my knowledge.
-            </td>
-        </tr>
-    </table>
+    <div class="taskbar">
+        <a class="task-items" href="#abt">About</a>
+        <a class="task-items" href="#MyProject">Projects</a>
+        <a class="task-items" href="#skills">Technical Skills</a>
+        <a class="task-items" href="#Contact">Contact Info</a>
+    </div>
+    <div class="intro">
+        <table cellspacing = "0" cellpadding = "0">
+            <tr>
+                <td>
+                <h1>I'm <span class="Name">Bryan Susanto Yo</span></h1>
+                <p>Informatics | Undergraduate</p>
+                <p>Still Learning and trying to improve my competence in coding</p>
+                </td>
+                <td class="picture">
+                    <div class="profile-pic">
+                        <img src="img\imageTrial.jpg" alt="imageTrial.jpg">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-    <table width="100%">
-        <th><h1 id="MyProject">My <span style="color: blue;">Project</span></h1></th>
-        <tr>
-            <td>
-                project 1
-            </td>
-        </tr>
-        <tr>
-            <td>
-                project 2
-            </td>
-        </tr>
-        <tr>
-            <td>
-                project 3
-            </td>
-        </tr>
-        <tr>
-            <td>
-                ...
-            </td>
-        </tr>
-    </table>
+    <div class="About", id="abt">
+        <div class="title">About <span class="me">Me</span></div>
+        <div class="context">I am an Informatics majoring in Interactive Multimedia Student currently learning in Indonesia University Pelita Harapan (UPH), as an undergraduate I often join in various organization events as an event organizer.
+                However, I focus more on developing games that are innovative and fun to play, I am also currently still learning by taking courses to expand my knowledge.</div>
+        <!-- <div class="AbtDetails">
+            <div class="AbtTitle">Current Focus</div>
+            <div class="AbtTitle">Core Skills</div>
+            <div class="DetailAbt"></div>
+        </div>     -->
+    </div>
 
-    <table width="100%">
-        <th><h1 id="Skill">Technical <span style="color: aqua;">Skills</span></h1></th>
-        <tr>
-            <td>
-                C++
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Java
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Ren'py Game Engine
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Android Studio
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Unity Game Engine
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Roblox Studio
-            </td>
-        </tr>
-    </table>
+<div class="Project" id="MyProject">
+    <div class="title">My <span class="prj">Projects</span></div>
+    <div class="context">Below are the projects that I have ever done</div>
 
-    <!-- <dl>
-        <dt><h1 id="Contact">Contact Me</h1></dt>
-        <dd>
-            <table cellspacing = "5">
-                <tbody>
-                    <tr>
-                        <td><strong>WhatsApp:</strong></td>
-                        <td>0821 XXXX XXXX</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><strong>Instagram:</strong></td>
-                        <td>@XXXXXXX</td>
-                    </tr>
-                </tbody>
-            </table>
-        </dd>
-    </dl> -->
+    <div class="project-card">
+        <div class="project-media">
+            <img src="img/GoalLarge.png" alt="Project screenshot">
+        </div>
+        <div class="project-body">
+            <h3 class="h3">E-commerce Redesign</h3>
+            <p>Simple description of the first project—what it is, your role, and the result.</p>
+            <a class="btn" href="https://corvus2211.github.io/tugas-web-1/">View project</a>
+        </div>
+    </div>
 
-    <table width="100%" cellspacing = "5">
+    <div class="Skills" id="skills">
+        <div class="title">My <span class="me">Technical</span> Skills</div>
+        <div class="skill-grid">
+            <div class="skill-card">
+                <div class="skill-media">
+                    <img src="img/AndroidStudio.png" alt="Android Studio">
+                </div>
+                <div class="skill-name">Android Studio</div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-media">
+                    <img src="img/Java.png" alt="Java">
+                </div>
+                <div class="skill-name">Java</div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-media">
+                    <img src="img/Unity.png" alt="Unity">
+                </div>
+                <div class="skill-name">Unity</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cont", id="Contact">
+        <table width="100%" cellspacing = "5">
         <th><h1>Contact <span style="color: blue;">Me</span></h1></th>
         <tbody>
             <tr>
@@ -121,6 +95,7 @@
             </tr>
         </tbody>
     </table>
+    </div>
 
 </body>
 </html>
